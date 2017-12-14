@@ -1,0 +1,6 @@
+framework module Pods_BookingCourtGrafenstein {
+  umbrella header "Pods-BookingCourtGrafenstein-umbrella.h"
+
+  export *
+  module * { export * }
+}

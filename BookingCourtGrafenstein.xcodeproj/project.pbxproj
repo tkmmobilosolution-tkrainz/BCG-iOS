@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C44D95F5B17018E515EF681C /* Pods_BookingCourtGrafenstein.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFAB4738E8A8E4D7266DB24 /* Pods_BookingCourtGrafenstein.framework */; };
+		CA60E7541FE2AC5B004A07F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7531FE2AC5B004A07F6 /* AppDelegate.swift */; };
+		CA60E7561FE2AC5B004A07F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7551FE2AC5B004A07F6 /* ViewController.swift */; };
+		CA60E75B1FE2AC5B004A07F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA60E75A1FE2AC5B004A07F6 /* Assets.xcassets */; };
+		CA60E75E1FE2AC5B004A07F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA60E75C1FE2AC5B004A07F6 /* LaunchScreen.storyboard */; };
+		CA60E7661FE2AC8A004A07F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA60E7651FE2AC8A004A07F6 /* Main.storyboard */; };
+		CA60E7681FE2ACFB004A07F6 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */; };
+		CA60E76A1FE2AE48004A07F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */; };
+		CA60E76C1FE2B1EF004A07F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46A146AAEBC43E806CB12675 /* Pods-BookingCourtGrafenstein.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingCourtGrafenstein.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein.debug.xcconfig"; sourceTree = "<group>"; };
+		CA60E7501FE2AC5B004A07F6 /* BookingCourtGrafenstein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookingCourtGrafenstein.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA60E7531FE2AC5B004A07F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA60E7551FE2AC5B004A07F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA60E75A1FE2AC5B004A07F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA60E75D1FE2AC5B004A07F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA60E75F1FE2AC5B004A07F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA60E7651FE2AC8A004A07F6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EAFAB4738E8A8E4D7266DB24 /* Pods_BookingCourtGrafenstein.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookingCourtGrafenstein.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB12049F0D4AEA6C9EC0B74C /* Pods-BookingCourtGrafenstein.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingCourtGrafenstein.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA60E74D1FE2AC5B004A07F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44D95F5B17018E515EF681C /* Pods_BookingCourtGrafenstein.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7A9B736DF2055C25AB58A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFAB4738E8A8E4D7266DB24 /* Pods_BookingCourtGrafenstein.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0423B731229AB693DA39EC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46A146AAEBC43E806CB12675 /* Pods-BookingCourtGrafenstein.debug.xcconfig */,
+				EB12049F0D4AEA6C9EC0B74C /* Pods-BookingCourtGrafenstein.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA60E7471FE2AC5B004A07F6 = {
+			isa = PBXGroup;
+			children = (
+				CA60E7521FE2AC5B004A07F6 /* BookingCourtGrafenstein */,
+				CA60E7511FE2AC5B004A07F6 /* Products */,
+				B0423B731229AB693DA39EC0 /* Pods */,
+				A7A9B736DF2055C25AB58A2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA60E7511FE2AC5B004A07F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA60E7501FE2AC5B004A07F6 /* BookingCourtGrafenstein.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA60E7521FE2AC5B004A07F6 /* BookingCourtGrafenstein */ = {
+			isa = PBXGroup;
+			children = (
+				CA60E7531FE2AC5B004A07F6 /* AppDelegate.swift */,
+				CA60E7551FE2AC5B004A07F6 /* ViewController.swift */,
+				CA60E7651FE2AC8A004A07F6 /* Main.storyboard */,
+				CA60E75A1FE2AC5B004A07F6 /* Assets.xcassets */,
+				CA60E75C1FE2AC5B004A07F6 /* LaunchScreen.storyboard */,
+				CA60E75F1FE2AC5B004A07F6 /* Info.plist */,
+				CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */,
+				CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */,
+				CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */,
+			);
+			path = BookingCourtGrafenstein;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA60E74F1FE2AC5B004A07F6 /* BookingCourtGrafenstein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA60E7621FE2AC5B004A07F6 /* Build configuration list for PBXNativeTarget "BookingCourtGrafenstein" */;
+			buildPhases = (
+				2D768BFC72B681828A01E8A5 /* [CP] Check Pods Manifest.lock */,
+				CA60E74C1FE2AC5B004A07F6 /* Sources */,
+				CA60E74D1FE2AC5B004A07F6 /* Frameworks */,
+				CA60E74E1FE2AC5B004A07F6 /* Resources */,
+				EE20DF950AF388770992FCD1 /* [CP] Embed Pods Frameworks */,
+				F89668080A0D645C5AA800C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookingCourtGrafenstein;
+			productName = BookingCourtGrafenstein;
+			productReference = CA60E7501FE2AC5B004A07F6 /* BookingCourtGrafenstein.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA60E7481FE2AC5B004A07F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Thomas Krainz-Mischitz";
+				TargetAttributes = {
+					CA60E74F1FE2AC5B004A07F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA60E74B1FE2AC5B004A07F6 /* Build configuration list for PBXProject "BookingCourtGrafenstein" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA60E7471FE2AC5B004A07F6;
+			productRefGroup = CA60E7511FE2AC5B004A07F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA60E74F1FE2AC5B004A07F6 /* BookingCourtGrafenstein */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA60E74E1FE2AC5B004A07F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60E75E1FE2AC5B004A07F6 /* LaunchScreen.storyboard in Resources */,
+				CA60E75B1FE2AC5B004A07F6 /* Assets.xcassets in Resources */,
+				CA60E7661FE2AC8A004A07F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D768BFC72B681828A01E8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookingCourtGrafenstein-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE20DF950AF388770992FCD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89668080A0D645C5AA800C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA60E74C1FE2AC5B004A07F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60E76A1FE2AE48004A07F6 /* LoginViewController.swift in Sources */,
+				CA60E76C1FE2B1EF004A07F6 /* RegisterViewController.swift in Sources */,
+				CA60E7561FE2AC5B004A07F6 /* ViewController.swift in Sources */,
+				CA60E7681FE2ACFB004A07F6 /* StartupViewController.swift in Sources */,
+				CA60E7541FE2AC5B004A07F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA60E75C1FE2AC5B004A07F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA60E75D1FE2AC5B004A07F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA60E7601FE2AC5B004A07F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA60E7611FE2AC5B004A07F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA60E7631FE2AC5B004A07F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46A146AAEBC43E806CB12675 /* Pods-BookingCourtGrafenstein.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MAXX7N6FR;
+				INFOPLIST_FILE = BookingCourtGrafenstein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tkm.mobilesolution.bcg.BookingCourtGrafenstein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA60E7641FE2AC5B004A07F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB12049F0D4AEA6C9EC0B74C /* Pods-BookingCourtGrafenstein.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MAXX7N6FR;
+				INFOPLIST_FILE = BookingCourtGrafenstein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tkm.mobilesolution.bcg.BookingCourtGrafenstein;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA60E74B1FE2AC5B004A07F6 /* Build configuration list for PBXProject "BookingCourtGrafenstein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60E7601FE2AC5B004A07F6 /* Debug */,
+				CA60E7611FE2AC5B004A07F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA60E7621FE2AC5B004A07F6 /* Build configuration list for PBXNativeTarget "BookingCourtGrafenstein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA60E7631FE2AC5B004A07F6 /* Debug */,
+				CA60E7641FE2AC5B004A07F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA60E7481FE2AC5B004A07F6 /* Project object */;
+}

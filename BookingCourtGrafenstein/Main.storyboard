@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="txG-jW-TVm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7fV-7J-km7">
+            <objects>
+                <navigationController id="txG-jW-TVm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hPd-9P-i78">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oRK-ks-DPT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdo-0h-pck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1625" y="92"/>
+        </scene>
+        <!--StartupViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="StartupViewController" id="BYZ-38-t0r" customClass="StartupViewController" customModule="BookingCourtGrafenstein" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9rK-Bb-p2G">
+                                <rect key="frame" x="137" y="517" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fjI-eT-ZjU"/>
+                                    <constraint firstAttribute="width" constant="100" id="r8u-dg-4U3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Willkommen bei BookingCourt. Deiner App für Tennisplaatzreservierungen." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sT5-uB-Ibe">
+                                <rect key="frame" x="67" y="331.5" width="240" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="27c-Fo-Nm7"/>
+                                    <constraint firstAttribute="width" constant="240" id="wbi-iq-UY2"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sT5-uB-Ibe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J4C-QT-YLD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9rK-Bb-p2G" secondAttribute="bottom" constant="50" id="OnJ-Ck-fnO"/>
+                            <constraint firstItem="sT5-uB-Ibe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="TbV-2D-tww"/>
+                            <constraint firstItem="9rK-Bb-p2G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nTb-YQ-wjV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1gG-Kq-Vsw"/>
+                    <connections>
+                        <segue destination="W64-zo-9Gq" kind="push" identifier="showLoginFromStartup" id="Jy0-N9-4Lv"/>
+                        <segue destination="2n4-8a-yke" kind="show" identifier="showCalendarFromStartup" id="SIL-mz-e0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839.20000000000005" y="92.203898050974516"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="lhL-5x-g36">
+            <objects>
+                <viewController title="LoginViewController" id="W64-zo-9Gq" customClass="LoginViewController" customModule="BookingCourtGrafenstein" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kd7-s0-oCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" editable="NO" text="Das ist eine geile AppDas ist eine geile AppDas ist eine geile App" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcl-Xk-Qfr">
+                                <rect key="frame" x="8" y="72" width="359" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Adresse" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="X88-bn-9ty">
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                <color key="textColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Passwort" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hRZ-Qd-PQ5">
+                                <rect key="frame" x="16" y="202" width="343" height="30"/>
+                                <color key="textColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFH-YX-uwB">
+                                <rect key="frame" x="80" y="256" width="215" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qI4-s7-JG5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKV-oR-SCm">
+                                <rect key="frame" x="80" y="325" width="215" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ntF-TS-ZNJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="1" green="0.67280368564126081" blue="0.031069206714468556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B2V-tg-7Aq" kind="push" identifier="showRegisterFromLogin" id="1he-Ee-JvT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xcl-Xk-Qfr" firstAttribute="top" secondItem="8JQ-ad-wSw" secondAttribute="top" constant="8" id="2jc-Oe-xFr"/>
+                            <constraint firstItem="sKV-oR-SCm" firstAttribute="top" secondItem="fFH-YX-uwB" secondAttribute="bottom" constant="24" id="52d-BT-EYC"/>
+                            <constraint firstItem="Xcl-Xk-Qfr" firstAttribute="leading" secondItem="8JQ-ad-wSw" secondAttribute="leading" constant="8" id="6tV-nm-jPj"/>
+                            <constraint firstItem="hRZ-Qd-PQ5" firstAttribute="leading" secondItem="8JQ-ad-wSw" secondAttribute="leading" constant="16" id="ElM-RU-7gS"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="trailing" secondItem="Xcl-Xk-Qfr" secondAttribute="trailing" constant="8" id="F04-h1-WTt"/>
+                            <constraint firstItem="X88-bn-9ty" firstAttribute="leading" secondItem="8JQ-ad-wSw" secondAttribute="leading" constant="16" id="FJj-2c-qNw"/>
+                            <constraint firstItem="X88-bn-9ty" firstAttribute="top" secondItem="Xcl-Xk-Qfr" secondAttribute="bottom" constant="24" id="GBC-4B-ym2"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sKV-oR-SCm" secondAttribute="bottom" constant="254" id="NvX-ZF-BaR"/>
+                            <constraint firstItem="hRZ-Qd-PQ5" firstAttribute="top" secondItem="X88-bn-9ty" secondAttribute="bottom" constant="24" id="Q6r-wf-9zw"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="trailing" secondItem="sKV-oR-SCm" secondAttribute="trailing" constant="80" id="U9E-ub-iHm"/>
+                            <constraint firstItem="sKV-oR-SCm" firstAttribute="leading" secondItem="8JQ-ad-wSw" secondAttribute="leading" constant="80" id="hCJ-Cs-Mvj"/>
+                            <constraint firstItem="fFH-YX-uwB" firstAttribute="leading" secondItem="8JQ-ad-wSw" secondAttribute="leading" constant="80" id="hdS-PK-Dmf"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="trailing" secondItem="hRZ-Qd-PQ5" secondAttribute="trailing" constant="16" id="hyV-67-EbQ"/>
+                            <constraint firstItem="fFH-YX-uwB" firstAttribute="top" secondItem="hRZ-Qd-PQ5" secondAttribute="bottom" constant="24" id="kci-mw-lVG"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="trailing" secondItem="X88-bn-9ty" secondAttribute="trailing" constant="16" id="mYa-Fq-534"/>
+                            <constraint firstItem="8JQ-ad-wSw" firstAttribute="trailing" secondItem="fFH-YX-uwB" secondAttribute="trailing" constant="80" id="ywU-CE-Vd4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8JQ-ad-wSw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GEt-E0-3G0"/>
+                    <connections>
+                        <segue destination="2n4-8a-yke" kind="show" identifier="showCalendarFromLogin" id="2q3-Mp-ijt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wE-oe-97P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="95.802098950524751"/>
+        </scene>
+        <!--RegisterViewController-->
+        <scene sceneID="Ywy-eN-QEe">
+            <objects>
+                <viewController title="RegisterViewController" id="B2V-tg-7Aq" customClass="RegisterViewController" customModule="BookingCourtGrafenstein" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cb4-LO-6KQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="2bF-pc-Kyf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ED7-cC-1v1"/>
+                    <connections>
+                        <segue destination="2n4-8a-yke" kind="show" identifier="showCalendarFromRegister" id="nzo-MI-ich"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZy-Eo-1sY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="96"/>
+        </scene>
+        <!--CalendarViewConstroller-->
+        <scene sceneID="NMj-go-21c">
+            <objects>
+                <viewController title="CalendarViewConstroller" id="2n4-8a-yke" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BN-kc-0nN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="0b1-C7-V03"/>
+                    </view>
+                    <connections>
+                        <segue destination="oCq-kb-hkI" kind="show" identifier="shomBookingsFromCalendar" id="FfV-DT-AQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTY-MV-Rc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-655"/>
+        </scene>
+        <!--BookingsViewController-->
+        <scene sceneID="nYN-Fr-sGc">
+            <objects>
+                <viewController title="BookingsViewController" id="oCq-kb-hkI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEP-AI-iEM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KNx-Ov-kkz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRl-dc-sJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-655.32233883058473"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2q3-Mp-ijt"/>
+    </inferredMetricsTieBreakers>
+</document>
