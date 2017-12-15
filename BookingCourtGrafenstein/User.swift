@@ -27,4 +27,24 @@ class User: NSObject {
         self.lastname = dictionary["lastname"] as! String
         self.email = dictionary["email"] as! String
     }
+    
+    public init(dictionary: [String: Any]) {
+        self.id = dictionary["uid"] as! String
+        self.payment = dictionary["payment"] as! Bool
+        self.admin = dictionary["admin"] as! Bool
+        self.firstname = dictionary["firstname"] as! String
+        self.lastname = dictionary["lastname"] as! String
+        self.email = dictionary["email"] as! String
+    }
+    
+    public func toDictionary() -> [String: Any] {
+        return [
+            "admin": self.admin,
+            "payment": self.payment,
+            "firstname": self.firstname,
+            "lastname": self.lastname,
+            "email": self.email,
+            "uid": self.id
+        ]
+    }
 }
