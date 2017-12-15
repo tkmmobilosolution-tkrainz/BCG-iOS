@@ -16,6 +16,9 @@
 		CA60E7681FE2ACFB004A07F6 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */; };
 		CA60E76A1FE2AE48004A07F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */; };
 		CA60E76C1FE2B1EF004A07F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */; };
+		CA60E76E1FE3D373004A07F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA60E76D1FE3D372004A07F6 /* GoogleService-Info.plist */; };
+		CA60E7701FE3D4C8004A07F6 /* String+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E76F1FE3D4C8004A07F6 /* String+Authentication.swift */; };
+		CA60E7721FE3D909004A07F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60E7711FE3D909004A07F6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CA60E76D1FE3D372004A07F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA60E76F1FE3D4C8004A07F6 /* String+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Authentication.swift"; sourceTree = "<group>"; };
+		CA60E7711FE3D909004A07F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EAFAB4738E8A8E4D7266DB24 /* Pods_BookingCourtGrafenstein.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookingCourtGrafenstein.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB12049F0D4AEA6C9EC0B74C /* Pods-BookingCourtGrafenstein.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookingCourtGrafenstein.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +90,7 @@
 		CA60E7521FE2AC5B004A07F6 /* BookingCourtGrafenstein */ = {
 			isa = PBXGroup;
 			children = (
+				CA60E76D1FE3D372004A07F6 /* GoogleService-Info.plist */,
 				CA60E7531FE2AC5B004A07F6 /* AppDelegate.swift */,
 				CA60E7551FE2AC5B004A07F6 /* ViewController.swift */,
 				CA60E7651FE2AC8A004A07F6 /* Main.storyboard */,
@@ -93,6 +100,8 @@
 				CA60E7671FE2ACFB004A07F6 /* StartupViewController.swift */,
 				CA60E7691FE2AE48004A07F6 /* LoginViewController.swift */,
 				CA60E76B1FE2B1EF004A07F6 /* RegisterViewController.swift */,
+				CA60E76F1FE3D4C8004A07F6 /* String+Authentication.swift */,
+				CA60E7711FE3D909004A07F6 /* User.swift */,
 			);
 			path = BookingCourtGrafenstein;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA60E75E1FE2AC5B004A07F6 /* LaunchScreen.storyboard in Resources */,
+				CA60E76E1FE3D373004A07F6 /* GoogleService-Info.plist in Resources */,
 				CA60E75B1FE2AC5B004A07F6 /* Assets.xcassets in Resources */,
 				CA60E7661FE2AC8A004A07F6 /* Main.storyboard in Resources */,
 			);
@@ -195,12 +205,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BookingCourtGrafenstein/Pods-BookingCourtGrafenstein-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,9 +244,11 @@
 			files = (
 				CA60E76A1FE2AE48004A07F6 /* LoginViewController.swift in Sources */,
 				CA60E76C1FE2B1EF004A07F6 /* RegisterViewController.swift in Sources */,
+				CA60E7701FE3D4C8004A07F6 /* String+Authentication.swift in Sources */,
 				CA60E7561FE2AC5B004A07F6 /* ViewController.swift in Sources */,
 				CA60E7681FE2ACFB004A07F6 /* StartupViewController.swift in Sources */,
 				CA60E7541FE2AC5B004A07F6 /* AppDelegate.swift in Sources */,
+				CA60E7721FE3D909004A07F6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

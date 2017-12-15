@@ -8,4 +8,5 @@ target 'BookingCourtGrafenstein' do
   # Pods for BookingCourtGrafenstein
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 end

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D0E9CD91C0BA33FB1994ADC71870B4C"
+               BlueprintIdentifier = "0268959BA1028AA272EE934C4918784A"
                BuildableName = "Pods_BookingCourtGrafenstein.framework"
                BlueprintName = "Pods-BookingCourtGrafenstein"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D0E9CD91C0BA33FB1994ADC71870B4C"
+            BlueprintIdentifier = "0268959BA1028AA272EE934C4918784A"
             BuildableName = "Pods_BookingCourtGrafenstein.framework"
             BlueprintName = "Pods-BookingCourtGrafenstein"
             ReferencedContainer = "container:Pods.xcodeproj">

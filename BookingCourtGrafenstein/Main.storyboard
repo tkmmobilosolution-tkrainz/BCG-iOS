@@ -109,6 +109,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="W64-zo-9Gq" eventType="touchUpInside" id="OcS-W7-pRX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKV-oR-SCm">
                                 <rect key="frame" x="80" y="325" width="215" height="45"/>
@@ -147,6 +150,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="GEt-E0-3G0"/>
                     <connections>
+                        <outlet property="emailTextField" destination="X88-bn-9ty" id="NNq-6J-Z2V"/>
+                        <outlet property="passwordTextField" destination="hRZ-Qd-PQ5" id="KEz-kE-AXE"/>
                         <segue destination="2n4-8a-yke" kind="show" identifier="showCalendarFromLogin" id="2q3-Mp-ijt"/>
                     </connections>
                 </viewController>

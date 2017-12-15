@@ -1,4 +1,4 @@
-//
+ //
 //  StartupViewController.swift
 //  BookingCourtGrafenstein
 //
@@ -17,8 +17,9 @@ class StartupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        
 
-        if hasCurrentUser() {
+        if (try? !hasCurrentUser())! {
             DispatchQueue.main.asyncAfter(deadline: .now() + DispatchTimeInterval.seconds(2), execute: {
                 self.performSegue(withIdentifier: self.startupLoginSegueIdentifier, sender:nil)
             })
@@ -27,7 +28,11 @@ class StartupViewController: UIViewController {
         }
     }
     
-    private func hasCurrentUser() -> Bool {
-        return Auth.auth().currentUser != nil
+    private func hasCurrentUser() throws -> Bool {
+        
+        if Auth.auth().currentUser != nil {
+            try Auth.auth().signOut()
+        }
+        return false
     }
 }
